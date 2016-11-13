@@ -9,8 +9,9 @@ function sampleForLoop() {
 function sampleWhileLoop() {
     var sampleData = [];
     var max = 100;
-    while (sampleData.length < max) {
-        sampleData[sampleData.length - 1] = sampleData.length;
+    var index = 0;
+    while (index < max) {
+        sampleData[index++] = index + 1;
     }
     return sampleData;
 }
